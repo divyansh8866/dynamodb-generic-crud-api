@@ -1,0 +1,47 @@
+{
+  "table_name": "test-api-composite",
+  "key_field": "user_id",
+  "sort_key_field": "timestamp",
+  "fields": [
+    {
+      "name": "user_id",
+      "type": "string",
+      "required": true,
+      "min_length": 1,
+      "max_length": 100,
+      "description": "User identifier (partition key)"
+    },
+    {
+      "name": "timestamp",
+      "type": "string",
+      "required": true,
+      "min_length": 1,
+      "max_length": 50,
+      "description": "Event timestamp (sort key)"
+    },
+    {
+      "name": "event_type",
+      "type": "string",
+      "required": true,
+      "min_length": 1,
+      "max_length": 50,
+      "description": "Type of event"
+    },
+    {
+      "name": "data",
+      "type": "string",
+      "required": true,
+      "min_length": 1,
+      "max_length": 1000,
+      "description": "Event data"
+    },
+    {
+      "name": "status",
+      "type": "string",
+      "required": true,
+      "min_length": 1,
+      "max_length": 20,
+      "description": "Event status"
+    }
+  ]
+} 
